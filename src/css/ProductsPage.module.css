@@ -3,3 +3,9 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
 }
+.loader {
+  text-align: center;
+}
+.allContainer {
+  
+}

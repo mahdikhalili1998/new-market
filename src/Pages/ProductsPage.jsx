@@ -1,15 +1,20 @@
 import Card from "../components/Card";
+import Loader from "../components/Loader";
 import { useProducts } from "../context/ProductsContext";
 import styles from "../css/ProductsPage.module.css";
 function ProductsPage() {
   const products = useProducts();
 
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.allContainer}>
       {!products.length ? (
-        <p>loading ...</p>
+        <Loader className={styles.loader} />
       ) : (
-        products.map((item) => <Card key={item.id} data={item} />)
+        <div className={styles.cardContainer}>
+          {products.map((item) => (
+            <Card key={item.id} data={item} />
+          ))}
+        </div>
       )}
     </div>
   );

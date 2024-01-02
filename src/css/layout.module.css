@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Rowdies:wght@300;400&family=Rubik+Bubbles&family=Tektur&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;500&family=Rubik+Bubbles&family=Tektur&display=swap");
+
+.container header {
+  font-family: "Rowdies", sans-serif;
+  color: #fff;
+  background-color: var(--mainColor);
+
+  margin: 1.2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 0.7rem solid var(--mainColor);
+  border: 2px solid #fff;
+}
+.container {
+}
+.littleText {
+  font-family: "Great Vibes";
+  font-size: 1.6rem;
+  font-weight: 600;
+}

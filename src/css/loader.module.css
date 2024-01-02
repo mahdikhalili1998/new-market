@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 1.6rem;
+  color: var(--mainColor);
+  text-transform: capitalize;
+}

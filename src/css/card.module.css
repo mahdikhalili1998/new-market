@@ -4,12 +4,11 @@
   gap: 1rem;
   font-size: 1.4rem;
   align-items: center;
-  border: 2px dashed red;
+  border: 2px dashed var(--mainColor);
   margin: 1rem;
   background-color: #fff;
-  color: red;
+  color: var(--mainColor);
   border-radius: 2rem;
-  
 }
 .tokme {
   display: flex;
@@ -18,7 +17,7 @@
   margin-bottom: 2rem;
 }
 .container a {
-  color: red;
+  color: var(--mainColor);
   font-size: 1.8rem;
 }
 .container img {
@@ -30,5 +29,5 @@
   background-color: transparent;
   border: none;
   font-size: 1.8rem;
-  color: red;
+  color: var(--mainColor);
 }
