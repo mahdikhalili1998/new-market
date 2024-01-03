@@ -1,11 +1,19 @@
 .cardContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
 }
 .loader {
   text-align: center;
 }
-.allContainer {
-  
+.ds {
+  display: flex;
+}
+.categorieIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ul {
+  list-style: none;
 }

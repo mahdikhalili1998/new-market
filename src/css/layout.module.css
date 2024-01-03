@@ -6,7 +6,6 @@
   font-family: "Rowdies", sans-serif;
   color: #fff;
   background-color: var(--mainColor);
-
   margin: 1.2rem;
   padding: 1.5rem;
   border-radius: 1rem;
@@ -19,8 +18,7 @@
   outline: 0.7rem solid var(--mainColor);
   border: 2px solid #fff;
 }
-.container {
-}
+
 .littleText {
   font-family: "Great Vibes";
   font-size: 1.6rem;

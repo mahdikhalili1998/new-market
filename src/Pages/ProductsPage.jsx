@@ -1,3 +1,4 @@
+import { FaListUl } from "react-icons/fa";
 import Card from "../components/Card";
 import Loader from "../components/Loader";
 import { useProducts } from "../context/ProductsContext";
@@ -10,10 +11,25 @@ function ProductsPage() {
       {!products.length ? (
         <Loader className={styles.loader} />
       ) : (
-        <div className={styles.cardContainer}>
-          {products.map((item) => (
-            <Card key={item.id} data={item} />
-          ))}
+        <div className={styles.ds}>
+          <div className={styles.cardContainer}>
+            {products.map((item) => (
+              <Card key={item.id} data={item} />
+            ))}
+          </div>
+          <div>
+            <div className={styles.categorieIcons}>
+              <FaListUl />
+              <p>Categories</p>
+            </div>
+            <ul className={styles.ul}>
+              <li>All</li>
+              <li>Electronics</li>
+              <li>Jewelery</li>
+              <li>Men's Clothing</li>
+              <li>Womens's Clothing</li>
+            </ul>
+          </div>
         </div>
       )}
     </div>
