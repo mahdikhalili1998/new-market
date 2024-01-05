@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --mainColor: blue;
+  --mainColor: #e8590c;
 }
 
 * {
@@ -15,4 +15,6 @@ html {
 }
 body {
   background-color: rgb(233, 242, 249);
+  max-width: 93rem;
+  margin: 0rem auto ;
 }

@@ -5,10 +5,11 @@
   font-size: 1.4rem;
   align-items: center;
   border: 2px dashed var(--mainColor);
-  margin: 1rem;
+
   background-color: #fff;
   color: var(--mainColor);
   border-radius: 2rem;
+  padding: 1rem;
 }
 .tokme {
   display: flex;
@@ -21,8 +22,8 @@
   font-size: 1.8rem;
 }
 .container img {
-  width: 13rem;
-  height: 20rem;
+  width: 11rem;
+  height: 14rem;
   margin-top: 2rem;
 }
 .tokme button {
