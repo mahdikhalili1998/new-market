@@ -46,11 +46,14 @@
   width: 22rem;
   border: 2px dashed var(--mainColor);
   border-radius: 2rem;
-  display: flex ;
+  display: flex;
   align-items: center;
 }
 .searchBox input {
   border: none;
   background-color: transparent;
   padding: 0.8rem 1rem;
+}
+.searchBox input:focus {
+  outline: none;
 }

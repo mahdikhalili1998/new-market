@@ -5,7 +5,7 @@ import { useProducts } from "../context/ProductsContext";
 import styles from "../css/ProductsPage.module.css";
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
-import { searchProducts } from "../helper/titleName";
+import { filterProducts, searchProducts } from "../helper/titleName";
 function ProductsPage() {
   const products = useProducts();
   const [displayed, setDisplayed] = useState([]);
@@ -15,6 +15,7 @@ function ProductsPage() {
   useEffect(() => {
     setDisplayed(products);
     let finalsearch = searchProducts(products, query.search);
+    finalsearch = filterProducts(finalsearch, query.categories);
     setDisplayed(finalsearch);
     // console.log(query);
   }, [products, query]);
@@ -64,7 +65,7 @@ function ProductsPage() {
                 <li>Electronics</li>
                 <li>Jewelery</li>
                 <li>Men's Clothing</li>
-                <li>Womens's Clothing</li>
+                <li>Women's Clothing</li>
               </ul>
             </div>
           </div>

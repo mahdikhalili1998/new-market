@@ -4,10 +4,17 @@ const titletext = (text) => {
 const searchProducts = (products, search) => {
   if (!search) return products;
   const searchedProducts = products.filter((p) =>
-    console.log(p.title.toLowerCase().includes(search))
+    p.title.toLowerCase().includes(search)
   );
 
   return searchedProducts;
 };
+const filterProducts = (products, categorie) => {
+  if (!categorie) return products;
+  const filteredCategoies = products.filter(
+    (item) => item.category === categorie
+  );
+  return filteredCategoies;
+};
 
-export { titletext, searchProducts };
+export { titletext, searchProducts, filterProducts };
