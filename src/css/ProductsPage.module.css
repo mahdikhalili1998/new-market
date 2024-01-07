@@ -19,6 +19,7 @@
   font-size: 1.4rem;
   font-weight: 500;
   gap: 1rem;
+  color: var(--mainColor);
 }
 .ul {
   list-style: none;
@@ -56,4 +57,12 @@
 }
 .searchBox input:focus {
   outline: none;
+}
+.searchBox input::placeholder {
+  color: #f4ac86	;
+}
+.selected {
+  background-color: var(--mainColor);
+  border-radius: 1rem;
+  color: #fff;
 }

@@ -31,4 +31,17 @@ const createQuery = (currentQuery, newQuery) => {
   };
 };
 
-export { titletext, searchProducts, filterProducts, createQuery };
+const keeper = (searchParams) => {
+  const query = {};
+  const category = searchParams.get("categories");
+  const search = searchParams.get("search");
+  if (category) {
+    query.categories = category;
+  }
+  if (search) {
+    query.search = search;
+  }
+
+  return query;
+};
+export { titletext, searchProducts, filterProducts, createQuery, keeper };
