@@ -59,7 +59,7 @@
   outline: none;
 }
 .searchBox input::placeholder {
-  color: #f4ac86	;
+  color: #f4ac86;
 }
 .selected {
   background-color: var(--mainColor);
