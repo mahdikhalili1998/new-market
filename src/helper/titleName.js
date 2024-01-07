@@ -16,5 +16,19 @@ const filterProducts = (products, categorie) => {
   );
   return filteredCategoies;
 };
+const createQuery = (currentQuery, newQuery) => {
+  if (newQuery.categories === "all") {
+    const { categories, ...other } = currentQuery;
+    return other;
+  }
+  if (newQuery.search === "") {
+    const { search, ...other } = currentQuery;
+    return other;
+  }
+  return {
+    ...currentQuery,
+    ...newQuery,
+  };
+};
 
-export { titletext, searchProducts, filterProducts };
+export { titletext, searchProducts, filterProducts, createQuery };

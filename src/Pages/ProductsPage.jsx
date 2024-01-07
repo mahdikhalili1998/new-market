@@ -5,29 +5,37 @@ import { useProducts } from "../context/ProductsContext";
 import styles from "../css/ProductsPage.module.css";
 import { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
-import { filterProducts, searchProducts } from "../helper/titleName";
+import {
+  createQuery,
+  filterProducts,
+  searchProducts,
+} from "../helper/titleName";
+import { useSearchParams } from "react-router-dom";
 function ProductsPage() {
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const products = useProducts();
   const [displayed, setDisplayed] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState({});
-  console.log(displayed);
+  // console.log(displayed);
   useEffect(() => {
     setDisplayed(products);
+    setSearchParams(query);
     let finalsearch = searchProducts(products, query.search);
     finalsearch = filterProducts(finalsearch, query.categories);
     setDisplayed(finalsearch);
-    // console.log(query);
+    console.log(query);
   }, [products, query]);
 
   const categorieHandler = (e) => {
     const tagname = e.target.tagname;
     const categories = e.target.innerText.toLowerCase();
-    setQuery((query) => ({ ...query, categories }));
+    setQuery((query) => createQuery(query, { categories }));
     if (tagname !== "LI") return;
   };
   const searchHandler = () => {
-    setQuery((query) => ({ ...query, search }));
+    setQuery((query) => createQuery(query, { search }));
   };
   return (
     <div className={styles.allContainer}>
