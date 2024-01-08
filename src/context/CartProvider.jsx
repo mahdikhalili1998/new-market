@@ -19,6 +19,40 @@ const reducer = (state, action) => {
         ...Pluser(state.selectedItem),
         chekOut: false,
       };
+    case "REMOVE_ITEM":
+      const newSelectedItem = state.selectedItem.filter(
+        (item) => item.id !== action.payload.id
+      );
+      return {
+        ...state,
+        selectedItem: [...newSelectedItem],
+        ...Pluser(newSelectedItem),
+      };
+    case "INCREASE":
+      const index = state.selectedItem.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      state.selectedItem[index].quantity++;
+      return {
+        ...state,
+        ...Pluser(state.selectedItem),
+      };
+    case "DECREASE":
+      const indexkam = state.selectedItem.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      state.selectedItem[indexkam].quantity--;
+      return {
+        ...state,
+        ...Pluser(state.selectedItem),
+      };
+    case "CHECK_OUT":
+      return {
+        selectedItem: [],
+        counterItem: 0,
+        total: 0,
+        chekOut: true,
+      };
 
     default:
     // console.log(error);
