@@ -44,4 +44,18 @@ const keeper = (searchParams) => {
 
   return query;
 };
-export { titletext, searchProducts, filterProducts, createQuery, keeper };
+const Pluser = (item) => {
+  const counterItem = item.reduce((acc, cur) => acc + cur.quantity, 0);
+  const total = item
+    .reduce((acc, cur) => acc + cur.price * cur.quantity, 0)
+    .toFixed(2);
+  return { counterItem, total };
+};
+export {
+  titletext,
+  searchProducts,
+  filterProducts,
+  createQuery,
+  keeper,
+  Pluser,
+};
