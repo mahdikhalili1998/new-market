@@ -51,6 +51,15 @@ const Pluser = (item) => {
     .toFixed(2);
   return { counterItem, total };
 };
+
+const productsQuantity = (state, id) => {
+  const index = state.selectedItem.findIndex((item) => item.id === id);
+  if (index === -1) {
+    return 0;
+  } else {
+    return state.selectedItem[index].quantity;
+  }
+};
 export {
   titletext,
   searchProducts,
@@ -58,4 +67,5 @@ export {
   createQuery,
   keeper,
   Pluser,
+  productsQuantity,
 };

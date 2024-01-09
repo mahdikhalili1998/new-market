@@ -32,3 +32,21 @@
   font-size: 1.8rem;
   color: var(--mainColor);
 }
+.bts {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-left: -6rem;
+}
+.tokme .kz {
+  width: 1.8rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  /* padding: 0px 4px; */
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.remove {
+  margin-top: 0.4rem;
+}
