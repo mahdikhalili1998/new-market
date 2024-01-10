@@ -16,7 +16,7 @@ function Card({ data }) {
     dispatch({ type, payload: data });
   };
   const quantity = productsQuantity(state, id);
-  console.log(quantity);
+
   return (
     <div className={styles.container}>
       <img src={image} alt={title} />
@@ -32,16 +32,29 @@ function Card({ data }) {
               <TbShoppingBagCheck />
             </button>
           ) : (
-            <button  className={styles.kz} onClick={() => shopingHandler("INCREASE")}>+</button>
+            <button
+              className={styles.kz}
+              onClick={() => shopingHandler("INCREASE")}
+            >
+              +
+            </button>
           )}
           {!!quantity && <span>{quantity}</span>}
           {quantity === 1 && (
-            <button className={styles.remove} onClick={() => shopingHandler("REMOVE_ITEM")}>
+            <button
+              className={styles.remove}
+              onClick={() => shopingHandler("REMOVE_ITEM")}
+            >
               <MdDelete />
             </button>
           )}
           {quantity > 1 && (
-            <button className={styles.kz}  onClick={() => shopingHandler("DECREASE")}>-</button>
+            <button
+              className={styles.kz}
+              onClick={() => shopingHandler("DECREASE")}
+            >
+              -
+            </button>
           )}
         </div>
       </div>

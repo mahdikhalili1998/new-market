@@ -24,3 +24,22 @@
   font-size: 1.6rem;
   font-weight: 600;
 }
+.basketcontainer {
+  position: relative;
+}
+.number {
+  position: absolute;
+  font-size: 1rem;
+  background-color: #fff;
+  color: var(--mainColor);
+  padding: 0px 4px;
+  border: 2px solid var(--mainColor);
+  border-radius: 5px;
+  top: -1.2rem;
+  right: 0.8rem;
+}
+.link {
+  color: #fff;
+  font-size: 2.2rem;
+  text-decoration: none;
+}

@@ -60,7 +60,7 @@ const reducer = (state, action) => {
 };
 function CartProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialstate);
-  console.log(state);
+  // console.log(state);
   return (
     <>
       <CartContext.Provider value={{ state, dispatch }}>

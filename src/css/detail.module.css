@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 4rem;
+}
+.image {
+  margin-left: 2rem;
+  border: 2px dashed var(--mainColor);
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.image img {
+  width: 18rem;
+  height: 18rem;
+}
+.text {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 2px dashed var(--mainColor);
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.text p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.rb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+.link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--mainColor);
+}

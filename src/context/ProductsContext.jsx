@@ -6,7 +6,7 @@ const ProductsContext = createContext();
 
 function ProductsContextPage({ children }) {
   const [products, setProducts] = useState([]);
-
+  console.log(products);
   useEffect(() => {
     const getData = async () => {
       try {
@@ -29,5 +29,10 @@ const useProducts = () => {
   const products = useContext(ProductsContext);
   return products;
 };
+const detailProducts = (id) => {
+  const products = useContext(ProductsContext);
+  const finde = products.find((item) => item.id === id);
+  return finde;
+};
 export default ProductsContextPage;
-export { useProducts };
+export { useProducts, detailProducts };
