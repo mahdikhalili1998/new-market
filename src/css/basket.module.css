@@ -1,0 +1,50 @@
+.container:nth-child(odd) {
+  background-color: var(--backgroundColorodd);
+}
+.container:nth-child(even) {
+  background-color: var(--backgroundColoreven);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+margin-bottom: 1.4rem;
+  border-radius: 1rem;
+}
+.image{
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.image img {
+  width: 12rem;
+  height: 12rem;
+}
+.container div {
+  display: flex;
+  gap: 2rem;
+}
+.btcontainer {
+  display: flex;
+  align-items: center;
+}
+.increase {
+  border: none;
+  width: 1.8rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  /* padding: 0px 4px; */
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.text {
+  font-size: 1.4rem;
+}
+.remove {
+  color: var(--mainColor);
+  background-color: transparent;
+  border: none;
+  margin-top: 5px;
+  font-size: 2.2rem;
+}

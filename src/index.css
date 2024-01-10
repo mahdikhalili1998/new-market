@@ -3,6 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
   --mainColor: #e8590c;
+  --backgroundColorodd: #fadece;
+  --backgroundColoreven: #f6bd9e;
 }
 
 * {
@@ -16,5 +18,5 @@ html {
 body {
   background-color: rgb(233, 242, 249);
   max-width: 93rem;
-  margin: 0rem auto ;
+  margin: 0rem auto;
 }

@@ -3,9 +3,9 @@ import styles from "../css/card.module.css";
 import { Link } from "react-router-dom";
 import { TbListDetails } from "react-icons/tb";
 import { TbShoppingBagCheck } from "react-icons/tb";
+import { MdDelete } from "react-icons/md";
 import { productsQuantity, titletext } from "../helper/titleName";
 import { useCard } from "../context/CartProvider";
-import { MdDelete } from "react-icons/md";
 
 function Card({ data }) {
   const { id, image, price, title } = data;

@@ -6,7 +6,7 @@ const ProductsContext = createContext();
 
 function ProductsContextPage({ children }) {
   const [products, setProducts] = useState([]);
-  console.log(products);
+  // console.log(products);
   useEffect(() => {
     const getData = async () => {
       try {

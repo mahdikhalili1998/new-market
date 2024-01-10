@@ -1,0 +1,24 @@
+.container {
+height: 17rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.4rem;
+  border: 2px dashed var(--mainColor);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.container button {
+  background-color: var(--mainColor);
+  border: none;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: .5rem;
+}
+.container p{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}

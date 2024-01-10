@@ -28,7 +28,7 @@ function Layout({ children }) {
         </div>
       </header>
       {children}
-      <footer> This is footer</footer>
+      <footer className={styles.footer}> This site developed by react </footer>
     </div>
   );
 }
